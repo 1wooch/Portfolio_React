@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App() { // contain all of the front-end ui for app
   return (
     <div className="App">
       <header className="App-header">
