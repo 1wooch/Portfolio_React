@@ -12,3 +12,14 @@ git push origin
 
 src folder-> index.js will be first page (main)
 testing
+
+bootstrap has been implement
+npm install react-bootstrap bootstrap
+
+to use it
+put 
+"import 'bootstrap/dist/css/bootstrap.css'" in index.js
+
+Router has been added
+npm i -D react-router-dom@latest
+
