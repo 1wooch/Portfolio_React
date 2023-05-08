@@ -1,0 +1,7 @@
+#navbar{
+    white-space:nowrap; 
+}
+#navbarcont{
+    display:inline; 
+    padding-right: 100px;
+}
