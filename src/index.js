@@ -4,10 +4,11 @@ import './index.css';
 import App from './App'; // contain all UI
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); // root rendering tag-> public-> index.html
 root.render(
   <React.StrictMode>
     <App /> 
+    
   </React.StrictMode>
 );
 //app contain all of UI

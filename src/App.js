@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Header(){ //make your own components Name has to start with CAPITAL!
+  return <header>
+    <h1><a href='/'>WON</a></h1>
+    <ol>
+      <li><a href='/'>First page</a></li>
+      <li><a href='/'>Second page</a></li>
+      <li><a href='/'>Third page</a></li>
+    </ol>
+  </header>
+}
+function Article(){
+  return<div>
+    <h2>Welcome!</h2>
+  <br/><h2>WON's Portfolio</h2>
+
+    </div>
+}
+function NavBar(){
+  return <nav>
+    
+  </nav>
+}
+
+
+
+
 function App() { // contain all of the front-end ui for app
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <NavBar></NavBar>
+      <Article></Article>
+      
     </div>
   );
 }
