@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-function Header(){ //make your own components Name has to start with CAPITAL!
+function Header(props){ //make your own components Name has to start with CAPITAL!
+  console.log('props',props); // why print 2 times?
+  
   return <header>
     <h1><a href='/'>WON</a></h1>
     <ol>
@@ -15,7 +17,6 @@ function Article(){
   return<div>
     <h2>Welcome!</h2>
   <br/><h2>WON's Portfolio</h2>
-
     </div>
 }
 function NavBar(){
@@ -30,7 +31,7 @@ function NavBar(){
 function App() { // contain all of the front-end ui for app
   return (
     <div>
-      <Header></Header>
+      <Header title="WONWOO CHOI"></Header>
       <NavBar></NavBar>
       <Article></Article>
       
