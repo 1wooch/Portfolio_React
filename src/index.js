@@ -1,20 +1,26 @@
 import React from 'react';
-//import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App'; // contain all UI
-//import Main from './mainpage/Main';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css'
-import { createRoot } from 'react-dom/client';
 
-const container = document.getElementById('root');
-const root = createRoot(container); 
-root.render(<App tab="home" />);
+import 'bootstrap/dist/css/bootstrap.css'
+//import { createRoot } from 'react-dom/client';
+//import Main from './mainpage/Main';
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 reportWebVitals();
 
 
-
+// const container = document.getElementById('root');
+// const root = createRoot(container); 
+// root.render(<App tab="home" />);
 // const root = ReactDOM.createRoot(document.getElementById('root')); // root rendering tag-> public-> index.html
 // root.render(
 //   <React.StrictMode>
