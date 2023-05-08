@@ -23,3 +23,4 @@ put
 Router has been added
 npm i -D react-router-dom@latest
 
+npm unistall lottie
