@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 function Header(props){ //make your own components Name has to start with CAPITAL!
   console.log('props',props); // why print 2 times?
-  
+
   return <header>
     <h1><a href='/'>WON</a></h1>
     <ol>
