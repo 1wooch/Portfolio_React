@@ -5,5 +5,9 @@ For build file
 npm run build -> update build file
 npx serve -s build -> posting build file on web
 
+github 
+git add .
+git commit -m "ENTER MESSAGE IN HERE"
+git push origin
 
 src folder-> index.js will be first page (main)
