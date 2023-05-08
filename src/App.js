@@ -44,16 +44,31 @@ function NavBar(props){
   </nav>
 }
 
+function Create(props){
+ return <article>
+  <h2>Create</h2>
+  <form onSubmit={event=>{
+    event.preventDefault(); //prevent reload after user submit value
+    const title = event.target.title.value; // get the title value in textbox
+    props.onCreate(title);
+  }}>
+    <input type='text' id="title" name='title' placeholder='title'></input><br></br>
+    <input type='submit' value="Create"></input>
+  </form>
+ </article>
+ 
+}
 
 
 
 function App() { // contain all of the front-end ui for app
-  const topics = [ //will replace with JSON
+  const [topics,setTopics] = useState([ //will replace with JSON
     {id:1,title:"Home",loc:"1"}, //id = uid title = showing name loc = location of file (link)
     {id:2,title:"Contact",loc:"2"},
     {id:3, title:"Skills",loc:"3"}
-  ]
+  ]);
   let content=null;
+  const [nextId,setNextId] = useState(4);
 
 
   let [mode,setMode]=useState('Read'); // should be let it keep change 
@@ -61,17 +76,27 @@ function App() { // contain all of the front-end ui for app
 
   if (mode==="Welcome"){
     content =  <Article title={mode}></Article>
+    mode="Read";
   }else if(mode==="Read"){
     let title=null;
     for (let i=0; i<topics.length; i++){
-
       if(topics[i].id===id){
         title=topics[i].title;
-        
       }
     }
     content =  <Article title={title}></Article>
-     
+     mode="Welcome";
+  }else if(mode==="Create"){
+    content=<Create onCreate={(_title)=>{
+      
+      const newTopic={id:nextId, title:_title, loc:nextId}
+      const newTopics=[...topics] //copy the topics
+      newTopics.push(newTopic);
+      setTopics(newTopics);
+      setMode("Read");
+      setId(nextId);
+      setNextId(nextId+1);
+    }}></Create>
   }
   return (
     <div>
@@ -83,7 +108,10 @@ function App() { // contain all of the front-end ui for app
         setId(_id);
       }}></NavBar>
     {content}
-      
+    <a href='/create' onClick={event=>{
+      event.preventDefault();
+      setMode("Create"); // change mode
+    }}>create</a>
     </div>
   );
 }
