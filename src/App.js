@@ -3,7 +3,7 @@
 import "./css/App.css"
 import React from "react";
 
-import { BrowserRouter, Routes, Route ,Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./pages/Layout";
 import Main from "./pages/Main";
