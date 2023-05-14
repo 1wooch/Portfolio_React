@@ -1,3 +1,4 @@
+cd Portfolio_React =>
 npm start-> make environment for react 
 if not work-> npm install
 
@@ -20,7 +21,6 @@ to use it
 put 
 "import 'bootstrap/dist/css/bootstrap.css'" in index.js
 
-Router has been added
-npm i -D react-router-dom@latest
+Router has been added=>npm i -D react-router-dom@latest
 
 npm unistall lottie
