@@ -10,7 +10,7 @@ import Main from "./pages/Main";
 import Exp from "./pages/Exp";
 import Contact from "./pages/Contact";
 import Navbar from "./pages/Navbar";
-
+import Footer from "./pages/Footer";
 /*
 <BrowserRouter>
       <div className="container">
@@ -38,6 +38,7 @@ export default function App(){
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
+      <Footer/>
     </div>
   </BrowserRouter>
   );
