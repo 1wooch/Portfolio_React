@@ -29,7 +29,7 @@ import Navbar from "./pages/Navbar";
 export default function App(){
   return(
     <BrowserRouter>
-    <div>
+    <div class="p-3 mb-2 bg-dark text-white">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Layout />}>

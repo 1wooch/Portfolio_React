@@ -1,9 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
-import ResumePDF from "../Resource/resume.pdf";
-
-
+//import ResumePDF from "../Resource/resume.pdf";
 
 function Main() {
   const container = useRef(null);
@@ -14,8 +12,6 @@ function Main() {
 
   useEffect(() => {
     const AnimationRandomNum = generateRandomNumber();
-    //const MainArticleRandomNum = generateRandomNumber();
-
     lottie.loadAnimation({
       container: container.current,
       renderer: "svg",
@@ -25,81 +21,55 @@ function Main() {
     });
   }, []);
 
-  const description = jsonData.Description[0];
-  const content3 = description.content3[generateRandomNumber()];
+  const randomFacts = jsonData.randomFacts;
+  const links = jsonData.links;
+
 
   return (
-    <div>
-      <div className="d-flex align-items-center justify-content-center">
-        <div className="w-50 p-4" ref={container}></div>
-        <div className="w-50 p-4">
-          <h1 className="text-center">My name is Wonwoo Choi</h1>
-          <p>{description.content1}</p>
-          <p>{description.content2}</p>
-          <p>{content3}</p>
-          <div>GitHub: <a href={description["GitHub:"]}>{description["GitHub:"]}</a></div>
-          <div>LinkedIn: <a href={description["LinkedIn:"]}>{description["LinkedIn:"]}</a></div>
-          <div>Resume: <a href={description.Resume}>{description.Resume}</a></div>
-          <div>ResumeTest: <a href={ResumePDF} target="_blank">Resume PDF</a></div>
+    <div >
+            <div className="d-flex align-items-center justify-content-center">
+                <div className="w-50 p-4" ref={container}></div>
+                <div className="w-50 p-4">
+                  
+                  <h2 className="text-center">My name is Wonwoo Choi</h2>
+                    <div className="w-50 p-12">
+                    <p>Hello!</p>
+                    <p>My name is Won.</p>
+                    <p>{randomFacts[generateRandomNumber()]}</p>
+               
+                    </div>
+                    <div className="d-flex gap-2">
+                     {links.map((link) =>
+                        link.icon === "" ? (
+                          <div>
+                            <a href={link.url}>
+                            <button type="button" class="btn btn-default bg-light">
+                             {link.name}
+                            </button>
+                            </a>
+                          </div>
+                        )
+                        :
+                        (
+                          <div className="d-inline">
+                            <a href={link.url}>
+                              <img
+                                src={`/logos/${link.icon}`}
+                                alt={link.name}
+                                width="50"
+                                height="50"
+                              />
+                            </a>
+                          </div>
+                        )
+                      )}
+                  </div>
+                </div>
+                
+            </div>
 
-        </div>
-      </div>
     </div>
   );
 }
 
 export default Main;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useRef, useEffect } from "react";
-// import lottie from "lottie-web";
-// import maindata from"../Json_data/Main.json";
-
-
-// function Main() {
-//   const container = useRef(null);
-
-//   useEffect(() => {
-//     lottie.loadAnimation({
-//       container: container.current,
-//       renderer: "svg",
-//       loop: true,
-//       autoplay: true,
-//       animationData: require("../Resource/Lottie/certificategraduation.json"),
-//     });
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Testing hi!</h1>
-//       <div className="d-flex align-items-center justify-content-center">
-//       <div className="w-50 p-4" ref={container}></div>
-//       <div className="w-50 p-4">
-//         <h1 className="text-center">My name is Wonwoo Choi</h1>
-//       </div>
-//     </div>
-//     </div>
-//   );
-// }
-
-// export default Main;

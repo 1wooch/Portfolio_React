@@ -1,30 +1,32 @@
 {
-    "MainAnime":[
+    "MainAnime": [
         "certificategraduation.json",
         "Game.json",
         "IOT.json",
         "cuteGrad.json"
     ],
-    "Description":[
+    "randomFacts": [
+        "Student at the Griffith University",
+        "Studying Bachelor of Information Technology",
+        "Software Engineer",
+        "Web Developer"
+    ],
+    "links": [
         {
-            "content1":"HELLO!",
-            "content2":"My Name is Won",
-            "content3":[
-                "Student at the Griffith University",
-                "Studying Bachelor of Information Technology",
-                "Software Engineer",
-                "Web Developer"
-            ],
-            "GitHub:":"https://github.com/1wooch",
-            "LinkedIn:":"https://www.linkedin.com/in/wwc1999/",
-            "Resume":"https://drive.google.com/file/d/1EU4BOpjt1e-QHXhPMXle0xzyQOosSYaz/view?usp=share_link"
-            
-            
-        }
+            "name": "GitHub",
+            "url": "https://github.com/1wooch",
+            "icon":"git.png"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/wwc1999/",
+            "icon": "linkedin.png"
+
+        },
+        {
+            "name": "Resume",
+            "url": "https://drive.google.com/file/d/1EU4BOpjt1e-QHXhPMXle0xzyQOosSYaz/view?usp=share_link",
+            "icon":""
+        }   
     ]
-
-
-
-
-
 }
