@@ -11,21 +11,7 @@ import Exp from "./pages/Exp";
 import Contact from "./pages/Contact";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
-/*
-<BrowserRouter>
-      <div className="container">
-        
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/" element={<Main />} />
-            <Route path="main" element={<Main />} />
-            <Route path="exp" element={<Exp />} />
-            <Route path="contact" element={<Contact />} />
-          </Route>
-        </Routes>
-      </div>
-    </BrowserRouter>
-*/
+
 export default function App(){
   return(
     <BrowserRouter>
@@ -43,4 +29,3 @@ export default function App(){
   </BrowserRouter>
   );
 }
-//ReactDOM.render(<App />, document.getElementById("root"));
