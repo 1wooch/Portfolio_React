@@ -24,3 +24,13 @@ put
 Router has been added=>npm i -D react-router-dom@latest
 
 npm unistall lottie
+
+
+work gif :https://lottiefiles.com/43885-laptop-working
+programming : https://lottiefiles.com/63487-programming-computer
+Developer: https://lottiefiles.com/18123-developer
+Study:https://lottiefiles.com/28893-book-loading
+Grad: https://lottiefiles.com/90696-graduation-dark
+cuteGrad:https://lottiefiles.com/91041-satchel-blob-graduation
+GradCertificate:https://lottiefiles.com/24321-certificate-for-graduation
+GradLaptop:https://lottiefiles.com/134692-graduacion

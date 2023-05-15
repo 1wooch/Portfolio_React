@@ -10,7 +10,7 @@ function Main() {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../Resource/Lottie/24321-certificate-for-graduation.json"),
+      animationData: require("../Resource/Lottie/certificategraduation.json"),
     });
   }, []);
 
