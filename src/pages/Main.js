@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
+import ResumePDF from "../Resource/resume.pdf";
+
+
 
 function Main() {
   const container = useRef(null);
@@ -37,6 +40,8 @@ function Main() {
           <div>GitHub: <a href={description["GitHub:"]}>{description["GitHub:"]}</a></div>
           <div>LinkedIn: <a href={description["LinkedIn:"]}>{description["LinkedIn:"]}</a></div>
           <div>Resume: <a href={description.Resume}>{description.Resume}</a></div>
+          <div>ResumeTest: <a href={ResumePDF} target="_blank">Resume PDF</a></div>
+
         </div>
       </div>
     </div>
