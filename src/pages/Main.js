@@ -20,7 +20,6 @@ function Main() {
       animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
     });
   }, []);
-
   const randomFacts = jsonData.randomFacts;
   const links = jsonData.links;
 
@@ -34,9 +33,8 @@ function Main() {
                   <h2 className="text-center">My name is Wonwoo Choi</h2>
                     <div className="w-50 p-12">
                     <p>Hello!</p>
-                    <p>My name is Won.</p>
+                    <p>You can call me Won!</p>
                     <p>{randomFacts[generateRandomNumber()]}</p>
-               
                     </div>
                     <div className="d-flex gap-2">
                      {links.map((link) =>
