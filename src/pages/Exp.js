@@ -24,8 +24,8 @@ function Exp(){
         <div className="col-md-6">
           <h1>Education:</h1>
           <ul>
-            {jsonData.education &&
-              jsonData.education.map((edu, index) => (
+            {jsonData.Education &&
+              jsonData.Education.map((edu, index) => (
                 <li key={index}>
                   <h3>{edu.SchoolName}</h3>
                   <p>{edu.Degree}</p>
