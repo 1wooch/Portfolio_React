@@ -20,30 +20,37 @@ function Exp(){
       }, []);
 
     return (
-        <div className="exp-page">
-            <div className="exp-list">
-                <h2>Education</h2>
-                {jsonData.education.map((item, index) => (
-                    <div key={`education-${index}`} className="exp-item">
-                        <h3>{item.SchoolName}</h3>
-                        <p>{`${item.Degree}, ${item.Major}`}</p>
-                        <p>{`${item.StartMonth} ${item.StartYear} - ${item.EndMonth} ${item.EndYear}`}</p>
-                        <p>GPA: {item.GPA}</p>
-                    </div>
-                ))}
-
-                <h2>Experience</h2>
-                {jsonData.experience.map((item, index) => (
-                    <div key={`experience-${index}`} className="exp-item">
-                        <h3>{item.WorkPlace}</h3>
-                        <p>{item.Position}</p>
-                        <p>{`${item.StartMonth} ${item.StartYear} - ${item.EndMonth} ${item.EndYear}`}</p>
-                        <p>{item.Description}</p>
-                    </div>
-                ))}
-            </div>
-            <div className="exp-animation" ref={container}></div>
+        <div className="row">
+        <div className="col-md-6">
+          <h1>Education:</h1>
+          <ul>
+            {jsonData.education &&
+              jsonData.education.map((edu, index) => (
+                <li key={index}>
+                  <h3>{edu.SchoolName}</h3>
+                  <p>{edu.Degree}</p>
+                  <p>{edu.Major}</p>
+                </li>
+              ))}
+          </ul>
+  
+          <h1>Experience:</h1>
+          <ul>
+            {jsonData.experience &&
+              jsonData.experience.map((exp, index) => (
+                <li key={index}>
+                  <h3>{exp.WorkPlace}</h3>
+                  <p>{exp.Position}</p>
+                  <p>{exp.Place}</p>
+                </li>
+              ))}
+          </ul>
         </div>
+  
+        <div className="col-md-6">
+          <div ref={animationContainer} style={{ width: "100%", height: "100%" }}></div>
+        </div>
+      </div>
     );
 }
 
