@@ -48,7 +48,7 @@ function Exp(){
         </div>
   
         <div className="col-md-6">
-          <div ref={animationContainer} style={{ width: "100%", height: "100%" }}></div>
+          <div ref={container} style={{ width: "100%", height: "100%" }}></div>
         </div>
       </div>
     );
