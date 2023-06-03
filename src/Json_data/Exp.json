@@ -258,5 +258,12 @@
             "Company":"Griffith University",
             "Email":"me@xenuku.com"
         }
-    ] 
+    ],
+    "MainAnime": [
+        "developer.json",
+        "graduationLaptop.json",
+        "programming.json",
+        "study.json",
+        "work.json"
+    ]
 }
