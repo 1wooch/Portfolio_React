@@ -42,7 +42,7 @@ function Exp(){
                     </div>
                 ))}
             </div>
-            <div className="exp-animation" ref={expRef}></div>
+            <div className="exp-animation" ref={container}></div>
         </div>
     );
 }
