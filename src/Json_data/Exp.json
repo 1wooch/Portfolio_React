@@ -264,6 +264,7 @@
         "graduationLaptop.json",
         "programming.json",
         "study.json",
-        "work.json"
+        "work.json",
+        "certificategraduation.json"
     ]
 }
