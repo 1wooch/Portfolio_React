@@ -4,7 +4,7 @@ import jsonData from "../Json_data/Exp.json";
 
 
 function Exp(){
-    const expRef= useRef(null);
+    const container = useRef(null);
     function generateRandomNumber() {
         return Math.floor(Math.random() * 4);
       }
