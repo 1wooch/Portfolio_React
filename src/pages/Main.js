@@ -16,6 +16,8 @@ function Main() {
 
   useEffect(() => {
     const AnimationRandomNum = generateRandomNumber();
+    document.title="Won | Main";
+
     lottie.loadAnimation({
       container: container.current,
       renderer: "svg",

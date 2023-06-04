@@ -10,6 +10,7 @@ function Exp(){
       }
       useEffect(() => {
         const AnimationRandomNum = generateRandomNumber();
+        document.title="Won | Experience";
         lottie.loadAnimation({
           container: container.current,
           renderer: "svg",
