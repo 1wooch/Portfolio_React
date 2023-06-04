@@ -1,5 +1,13 @@
+import "../css/common.css";
+
+
 function Contact(){
-    return <h1>It is Contact Page</h1>
+    return (
+    <div className="main-container">
+    <h1>It is Contact Page</h1>
+
+    </div>
+    )
 }
 
 export default Contact;

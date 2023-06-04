@@ -1,0 +1,29 @@
+.main-container {
+  font-family: Helvetica, sans-serif, Arial;
+  background-color: rgb(0, 0, 0);
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .horizontal-menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .horizontal-menu ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .horizontal-menu ul li {
+    margin: 0 10px;
+  }
+  
+  .horizontal-menu ul li a {
+    text-decoration: none;
+  }
+  
