@@ -7,4 +7,15 @@
     align-items: left;
     animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
     animation-fill-mode: forwards;
+    padding-top: 10%;
+
+}
+/* .details{
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.contentDiv{
+    padding-left: 15%;
 }

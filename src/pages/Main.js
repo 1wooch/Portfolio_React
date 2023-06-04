@@ -33,9 +33,9 @@ function Main() {
  
 
 
-            <div className="d-flex align-items-center justify-content-center">
-                <div className="w-50 p-5" ref={container}style={{ width: "80%", height: "100%" }}></div>
-                <div className="w-60 p-4">
+            <div className="contentDiv d-flex  ">
+                <div className="mainAni w-50 p-3" ref={container}style={{ width: "80%", height: "80%" }}></div>
+                <div className="details  w-50 p-3  ">
                   <div className="Typewriter ">
                         <Typewriter
                           options={{
@@ -45,7 +45,7 @@ function Main() {
                           }}
                         />
                     </div>
-                    <div className="w-50 p-12">
+                    <div className="">
                     <p>Hello!</p>
                     <p>{randomFacts[generateRandomNumber()]}</p>
                     </div>

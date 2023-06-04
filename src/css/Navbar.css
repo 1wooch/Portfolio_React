@@ -21,5 +21,11 @@
   font-size: 1.5rem !important;
 }
 .nav-item{
-  border-left: 1.5px solid rgb(21, 226, 21);
+  border-right: 1.5px solid rgb(21, 226, 21);
+}
+
+
+#navbarNav{
+  padding-left: 50px;
+  border-left: 1.5px solid rgb(0,0, 0);
 }

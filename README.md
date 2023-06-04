@@ -14,7 +14,7 @@ git push origin
 src folder-> index.js will be first page (main)
 testing
 
-bootstrap has been implement
+bootstrap has been implement (public -> index.html)
 npm install react-bootstrap bootstrap
 
 to use it
