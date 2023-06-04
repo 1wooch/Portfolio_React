@@ -1,3 +1,47 @@
 .expWrapper {
     overflow-x: hidden;
-}
+    padding: 20px;
+    background-color: black !important;
+  }
+  
+  .expWrapper h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .list-group.list-group-dark {
+    background-color: black;
+  }
+  
+  .list-group.list-group-dark .list-group-item {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .list-group.list-group-dark .list-group-item h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .list-group.list-group-dark .list-group-item p {
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .expWrapper {
+      padding: 10px;
+    }
+  
+    .expWrapper h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  

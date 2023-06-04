@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Exp.json"; 
 
+import "../css/Exp.css";
 
 function Exp(){
     const container = useRef(null);
@@ -39,8 +40,8 @@ function Exp(){
 
       <div className="row">
         <div className="col-md-1"></div>
-        <div className="col-md-10">
-          <ul className="list-group d-flex flex-row">
+        <div className="col-md-10 " >
+          <ul className="list-group list-group-dark d-flex flex-row">
             {jsonData.Education &&
               jsonData.Education.map((edu, index) => (
                 <li key={index} className="list-group-item flex-fill">
@@ -59,8 +60,8 @@ function Exp(){
         <div className="row">
           <div className="col-md-1"></div>
           
-          <div className="col-md-10">
-            <ul className="list-group">
+          <div className="col-md-10 ">
+            <ul className="list-group list-group-dark">
               {jsonData.experience &&
                 jsonData.experience.map((exp, index) => (
                   <li key={index} className="list-group-item">
