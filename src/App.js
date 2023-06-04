@@ -1,4 +1,5 @@
 //import ReactDOM from "react-dom";
+import "./css/Reset.css";
 
 import "./css/common.css"
 import React from "react";
@@ -16,7 +17,7 @@ export default function App(){
   return(
     <BrowserRouter>
     <body className="main-container">    
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2  text-white">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Layout />}>
