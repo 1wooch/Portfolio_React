@@ -1,9 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
-import "../css/Reset.css";
-import "../css/common.css";
-import "../css/Main.css";
+
 
 //import ResumePDF from "../Resource/resume.pdf";
 
@@ -29,7 +27,7 @@ function Main() {
 
 
   return (
-    <div className="main-container">
+    <div>
             <div className="d-flex align-items-center justify-content-center">
                 <div className="w-50 p-4" ref={container}></div>
                 <div className="w-50 p-4">

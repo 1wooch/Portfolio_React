@@ -1,12 +1,6 @@
-
-import "../css/Reset.css";
-
-import "../css/common.css";
-
-
 function Contact(){
     return (
-    <div className="main-container">
+    <div >
     <h1>It is Contact Page</h1>
 
     </div>

@@ -1,10 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Exp.json"; 
-import "../css/Reset.css";
 
-import "../css/Exp.css";
-import "../css/common.css";
 
 function Exp(){
     const container = useRef(null);
@@ -23,7 +20,7 @@ function Exp(){
       }, []);
 
     return (
-      <div className="main-container">
+      <div >
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-6">
