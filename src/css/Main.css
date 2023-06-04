@@ -1,0 +1,10 @@
+.Typewriter{
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+    animation-fill-mode: forwards;
+}

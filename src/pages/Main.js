@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
-
+import Typewriter from "typewriter-effect";
 
 //import ResumePDF from "../Resource/resume.pdf";
+
+import "../css/Main.css";
 
 function Main() {
   const container = useRef(null);
@@ -28,14 +30,23 @@ function Main() {
 
   return (
     <div>
+ 
+
+
             <div className="d-flex align-items-center justify-content-center">
-                <div className="w-50 p-4" ref={container}></div>
-                <div className="w-50 p-4">
-                  
-                  <h2 className="text-center">My name is Wonwoo Choi</h2>
+                <div className="w-50 p-5" ref={container}style={{ width: "80%", height: "100%" }}></div>
+                <div className="w-60 p-4">
+                  <div className="Typewriter ">
+                        <Typewriter
+                          options={{
+                            strings: ['My name is Wonwoo Choi', 'You can call me Won!'],
+                            autoStart: true,
+                            loop: true,
+                          }}
+                        />
+                    </div>
                     <div className="w-50 p-12">
                     <p>Hello!</p>
-                    <p>You can call me Won!</p>
                     <p>{randomFacts[generateRandomNumber()]}</p>
                     </div>
                     <div className="d-flex gap-2">

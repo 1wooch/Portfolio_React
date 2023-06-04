@@ -20,7 +20,7 @@ function Exp(){
       }, []);
 
     return (
-      <div >
+      <div className="expWrapper">
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-6">

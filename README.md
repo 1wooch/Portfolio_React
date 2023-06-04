@@ -24,7 +24,7 @@ put
 Router has been added=>npm i -D react-router-dom@latest
 
 npm unistall lottie
-
+npm i typewriter-effect
 
 work gif :https://lottiefiles.com/43885-laptop-working
 programming : https://lottiefiles.com/63487-programming-computer
