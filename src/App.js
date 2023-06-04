@@ -16,8 +16,7 @@ import Footer from "./pages/Footer";
 export default function App(){
   return(
     <BrowserRouter>
-    <body className="main-container">    
-    <div class="p-3 mb-2  text-white">
+    <div class="main-container  text-white">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -28,7 +27,6 @@ export default function App(){
       </Routes>
       <Footer/>
     </div>
-  </body>
   </BrowserRouter>
   );
 }

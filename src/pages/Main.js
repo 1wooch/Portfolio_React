@@ -3,6 +3,8 @@ import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
 import "../css/Reset.css";
 import "../css/common.css";
+import "../css/Main.css";
+
 //import ResumePDF from "../Resource/resume.pdf";
 
 function Main() {
