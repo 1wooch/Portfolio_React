@@ -1,3 +1,6 @@
+
+import "../css/Reset.css";
+
 import "../css/common.css";
 
 

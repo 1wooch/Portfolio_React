@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Exp.json"; 
-//import "../css/Exp.css";
+import "../css/Reset.css";
+
+import "../css/Exp.css";
 import "../css/common.css";
 
 function Exp(){

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 import jsonData from "../Json_data/Main.json";
+import "../css/Reset.css";
 import "../css/common.css";
 //import ResumePDF from "../Resource/resume.pdf";
 
