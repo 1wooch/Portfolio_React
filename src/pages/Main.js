@@ -11,7 +11,7 @@ function Main() {
   const container = useRef(null);
 
   function generateRandomNumber() {
-    return Math.floor(Math.random() * 4);
+    return Math.floor(Math.random() * 5);
   }
 
   useEffect(() => {

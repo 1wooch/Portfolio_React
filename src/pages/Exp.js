@@ -7,7 +7,7 @@ import "../css/Exp.css";
 function Exp(){
     const container = useRef(null);
     function generateRandomNumber() {
-        return Math.floor(Math.random() * 4);
+        return Math.floor(Math.random() * 7);
       }
       useEffect(() => {
         const AnimationRandomNum = generateRandomNumber();
