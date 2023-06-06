@@ -26,6 +26,9 @@ Router has been added=>npm i -D react-router-dom@latest
 npm unistall lottie
 npm i typewriter-effect
 
+https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_&gad=1&gclid=Cj0KCQjwj_ajBhCqARIsAA37s0xiu9FqCEbDazApoR1Dc278dSD0flk1T_jt0f-lHfxQBqg7HwLiaNMaAl01EALw_wcB
+
+
 work gif :https://lottiefiles.com/43885-laptop-working
 programming : https://lottiefiles.com/63487-programming-computer
 Developer: https://lottiefiles.com/18123-developer
