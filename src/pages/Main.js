@@ -56,7 +56,7 @@ function Main() {
                         link.icon === "" ? (
                           <div>
                             <a href={link.url}>
-                            <button type="button" class="btn btn-default bg-light">
+                            <button type="button" className="btn btn-default bg-light">
                              {link.name}
                             </button>
                             </a>

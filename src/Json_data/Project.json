@@ -1,0 +1,270 @@
+{
+ "experience":[
+    {
+        "WorkPlace":"GRIFFITH UNIVERSITY",
+        "Position":"Software Engineer",
+        "Place":"Brisbane Australia",
+        "StartMonth":"2019",
+        "EndMonth":"2023",
+        "Skills":[
+            "Project Management Skill.",
+            "Client Communication Skill."
+        ],
+
+        "Description":"Assisted in the development of a career opportunity form and bot for Griffith Business School. I worked closely with Dr. Geoffery and gained experience in project management and maintaining effective communication with clients during a project, which unfortunately was cancelled due to privacy concerns."
+    },
+    {
+        "WorkPlace":"HAEDOORI KOREAN FRIED CHICKEN SHOP",
+        "Place":"Brisbane Australia",
+        "Position":"Casual Chef",
+        "StartMonth":"2022 July",
+        "EndMonth":"2023 Jan",
+        "Skills":[
+            "Communication and teamwork skill."
+        ],
+        "Description":"I was employed as a second chef and front counter manager for Haedoori for seven months, in this time I gained valuable experience in teamwork and efficiency in the kitchen. I have also learned effective communication techniques and how to provide excellent service to customers in Australia."
+
+    },
+    {
+        "WorkPlace":"REPUBLIC OF KOREA - NATIONAL TAX OFFICE",
+        "Position":"Casual Tech helper and Customer Service",
+        "Place":"Seoul Korea",
+        "StartMonth":"2022 Feb",
+        "EndMonth":"2022 Feb",
+        "Skills":[
+            "ntroduce tax law and inform relevant document in person",
+            "Customer Service.",
+            "Basic Excel and Document Management Skills."
+        ],
+        "Description":"I worked for a government tax administration institution, where I assisted with end-of-year tax adjustments both in person and over the phone. Before starting this job, I took the initiative to study the tax system to gain a better understanding of its workings. I utilised my customer service skills from prior jobs to provide exceptional service to taxpayers. Due to my experience with Excel and Word documents I was able to quickly adapt to the requirements of this role and efficiently navigate the tax system."
+    },
+    {
+        "WorkPlace":"ST. JOHN DISABILITY WELFARE CENTRE, KOREA SEOUL",
+        "Position":"Casual Office job",
+        "Place":"Seoul Korea",
+        "StartMonth":"2020 May",
+        "EndMonth":"2022 Jan",
+        "Skills":[
+            "Provided hospitality services to people with disabilities.",
+            "Created Government reports using Microsoft Word and Excel."
+        ],
+        "Description":" I worked at a welfare facility for people and children with disabilities, where I managed official documents and helped develop policies. I mainly worked with people who had intellectual disabilities, and provided care based on their individual needs. Through this work, I developed strong people skills and learned more about the challenges faced by parents and caregivers of those with intellectual disabilities."
+    },{
+        "WorkPlace":"HOMEPLUS (TESCO), KOREA SEOUL",
+        "Position":"Casher",
+        "Place":"Seoul Korea",
+        "StartMonth":"2019 Nov",
+        "EndMonth":"2020 May",
+        "Skills":[
+            "Manage products and stock."
+        ],
+        "Description":"While working for Homeplus I developed skills in managing products and stock, with a strong attention to detail. I also gained experience working as a cashier and providing customer service, which helped me further improve my communication skills. I began as a part-time employee but was quickly promoted to a full-time position before leaving to enlist in the Korean army. During my time at Homeplus, I learned valuable lessons about customer service and communication skills."
+        }
+ ],
+ "Projects":[
+    {
+        "ProjectName":"PortFolio",
+        "ProjectDescription":"PortFolio for WWC using React and JSON",
+        "ProjectLink":"https://wwc1999.netlify.app",
+        "ProjectSkills":[
+                "React",
+                "JS",
+                "JSON"
+        ]
+    },
+    {
+        "ProjectName":"Johnwack",
+        "ProjectDescription":"Unity Game Project for University",
+        "ProjectLink":"https://github.com/Xenuku/JonWhack",
+        "ProjectSkills":[
+            {
+                "SkillName":["Unity", "C#"]
+            }
+        ]
+    },
+    {
+        "ProjectName":"CREATE (Co-Design of Rehabilitation Technology",
+        "ProjectDescription":"HABITEC project framework for rehabilitation of people with disabilities",
+        "ProjectLink":"https://github.com/Xenuku/wil-co-design",
+        "ProjectSkills":[
+            {
+                "SkillName":["PHP","SQL","CSS","Tailwind"]
+            }
+        ]
+    },
+    {
+        "ProjectName":"Tetris",
+        "ProjectDescription":"Make Tetris with GODOT engine",
+        "ProjectLink":"https://github.com/Xenuku/3815ICT-Assignment",
+        "ProjectSkills":[
+            {
+                "SkillName":["GODOT"]
+            }
+        ]
+    },{
+        "ProjectName":"SparkAuto",
+        "ProjectDescription":".Net Framework car sale webpage",
+        "ProjectLink":"https://github.com/1wooch/SparkAuto",
+        "ProjectSkills":[
+            {
+                "SkillName":[".Net Framework","C#","JSON","HTML","CSS"]
+            }
+        ]
+    },
+    {
+        "ProjectName":"telegram_BoxOffice_alert",
+        "ProjectDescription":"Telegram Alert for concert and movie ticket. Scroll the concert and movie ticket website and send the message to telegram",
+        "ProjectLink":"https://github.com/1wooch/telegram_alert",
+        "ProjectSkills":[
+            {
+                "SkillName":["Python","urllib","BeautifulSoup","Telegram API"]
+            }
+        ]
+    },
+    {
+        "ProjectName":"telegram_market_alert",
+        "ProjectDescription":"Check the webpage I register and send the message to telegram when the price is lower than the price I set",
+        "ProjectLink":"https://github.com/1wooch/telegram_alert",
+        "ProjectSkills":[
+            {
+                "SkillName":["Python","urllib","BeautifulSoup","Telegram API"]
+            }
+        ]
+    },
+    {
+        "ProjectName":"Web Chat Application",
+        "ProjectDescription":"Web Group Chat application by using HTML and Angular JS and user can send image ",
+        "ProjectLink":"https://github.com/1wooch/3813ICT_Assignment",
+        "ProjectSkills":[
+            {
+                "SkillName":["Angular JS","HTML","CSS","TypeScript"]
+            }
+        ]
+    }
+ ],
+    "Education":[
+        {
+            "SchoolName":"Griffith University",
+            "Degree":"Bachelor of Information Technology",
+            "Major":"Software Engineering",
+            "StartYear":"2019",
+            "Start Month":"July",
+            "EndYear":"2023",
+            "EndMonth":"June",
+            "Skills":[
+                {
+                    "SkillName":["Python","React.js","R","Panda","Numpy","MatPlotLib","Regular Expression"]
+                }
+            ],
+            "GPA":"6.42/7.00"
+        },
+        {
+            "SchoolName":"TAFE QLD",
+            "Degree":"Diploma of Information Technology",
+            "Major":"Software Engineering",
+            "StartYear":"2018",
+            "Start Month":"July",
+            "EndYear":"2019",
+            "EndMonth":"June",
+            "Skills":[
+                {
+                    "SkillName":["JS",".Net Framework","C#","SQL","HTML","CSS","JSON","Java"]
+                }
+            ],
+            "GPA":"PASS"
+        }
+    ],
+    "ExtraActivityAward":[
+        {
+            "Name":"COMMITTEE MEMBER",
+            "Organisation":"GRIFFITH TECHNOLOGY ASSOCIATION(GTA)",
+            "Date":"2023 Mar ~ Present"
+        },
+        {
+            "Name":"Student Peer Tutor",
+            "Organisation":"Griffith University School OF ICT",
+            "Date":"2023 Mar ~ 2023 May"
+        },
+        {
+            "Name":"Assessment & Exam Workshop Tutor",
+            "Organisation":"Griffith University School OF ICT",
+            "Date":"2023 Mar ~ 2023 March"
+        },
+        {
+            "Name":"THE ACADEMIC EXCELLENCE AWARD FOR 2022",
+            "Organisation":"Griffith University",
+            "Date":"2022"
+        }
+    ],
+    "Language":[
+        {
+            "LanguageName":"English",
+            "LanguageLevel":"Fluent"
+        },
+        {
+            "LanguageName":"Korean",
+            "LanguageLevel":"Native" 
+        }
+    ],
+    "Skills":[
+        {
+            "SkillName":"Technical Skills",
+            "SkillDetail":[
+                    "Python",
+                    "JS",
+                    "HTML & CSS",
+                    "React.js",
+                    "Swift",
+                    "PHP",
+                    "Unity 3D",
+                    "GODOT",
+                    "SQL",
+                    "C#"
+            ]
+        }
+    ],"Interests":[
+        {
+            "InterestDetail":[
+                "Web Technologies",
+                "Artificial Intelligence",
+                "Blockchain"
+            ]
+        }
+    ],"Strengths":[
+        {
+            "StrengthName":[
+                "Finding a Logical Solution",
+                "Mental Math (Zetamac Score of 49-52)",
+                "Leadership"
+            ]
+        }
+    ],
+    "Reference":[
+        {
+            "Name":"Dr. Geoffrey Carter",
+            "Position":"Director, Work Integrated Learning Griffith Business School",
+            "Company":"Griffith University",
+            "Email":"g.carter@griffith.edu.au"
+        },
+        {
+            "Name":"Dr. Kalie Su",
+            "Position":"Professor of Information Technology",
+            "Company":"Griffith University",
+            "Email":"k.su@griffith.edu.au"
+        },
+        {
+            "Name":"Liam Shanahan",
+            "Position":"Academic Group Partner",
+            "Company":"Griffith University",
+            "Email":"me@xenuku.com"
+        }
+    ],
+    "MainAnime": [
+        "developer.json",
+        "graduationLaptop.json",
+        "programming.json",
+        "study.json",
+        "certificategraduation.json",
+        "Grad.json"
+    ]
+}
