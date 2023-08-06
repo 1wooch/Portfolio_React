@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 //import { createRoot } from 'react-dom/client';
 //import Main from './mainpage/Main';
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 

@@ -1,5 +1,6 @@
 //import ReactDOM from "react-dom";
 import "./css/Reset.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./css/common.css"
 import React from "react";
@@ -17,7 +18,7 @@ import Footer from "./pages/Footer";
 export default function App(){
   return(
     <BrowserRouter>
-    <div class="main-container  text-white">
+    <div className="main-container  text-white">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Layout />}>

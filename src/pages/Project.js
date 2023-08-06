@@ -1,38 +1,107 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { getOverlayDirection } from 'react-bootstrap/esm/helpers';
+//import Button from 'react-bootstrap/Button';
+//import { getOverlayDirection } from 'react-bootstrap/esm/helpers';
 
 import jsonData from "../Json_data/Project.json";
 import "../css/Project.css";
+import lottie from "lottie-web";
 
 
 
 
 function Project(){
+    const container = useRef(null);
+    function generateRandomNumber() {
+        return Math.floor(Math.random() * 6);
+      }
+      useEffect(() => {
+        const AnimationRandomNum = generateRandomNumber();
+        document.title="Won | Experience";
+        lottie.loadAnimation({
+          container: container.current,
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
+        });
+      }, []);
+      ///Modal thing
+        const [modalIsOpen, setModalIsOpen] = useState(false);
+        const [selectedProject, setSelectedProject] = useState(null);
 
+        const openModal = (project) => {
+            setSelectedProject(project);
+            setModalIsOpen(true);
+            console.log("modal work?");
+        };
 
+        const closeModal = () => {
+            setSelectedProject(null);
+            setModalIsOpen(false);
+        };
+      ///
     return(
         <div className="expWrapper">
         <div className="row">
           <div className="col-md-1"></div>
-          {/* <div className="col-md-6">
+          <div className="col-md-6">
             <div className="d-flex justify-content-sm-end" ref={container} style={{ width: "80%", height: "100%" }}></div>
-          </div> */}
+          </div>
           <div className="col-md-4 d-flex align-items-center">
           {/* <h1 className="text-center text-lg">Education & Experience</h1> */}
           <h1 className="large-heading">Porjects</h1>
           </div>
           <div className="col-md-1"></div>
         </div>
-  
-  
         
         <h1 className="text-center">Projects</h1>
-  
-        <div className="row">
-         
-        </div>
+        
+        <div className="modalThing">
+        {jsonData.projects.map((project, index) => (
+          <div className="project-card" key={index} onClick={() => openModal(project)}>
+            <h3>{project.name}</h3>
+            <ul>
+              {project.technologies.slice(0, 3).map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <Modal
+        show={modalIsOpen}
+        onHide={closeModal}
+        className="modal"
+        centered
+        >
+        <Modal.Header closeButton>
+          <Modal.Title>Course Selection</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="modal-body">
+            <div className="col-3">
+              <div>
+                      {selectedProject && (
+                  <>
+                    <h2>{selectedProject.name}</h2>
+                    <h3>Technologies:</h3>
+                    <ul>
+                      {selectedProject.technologies.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                      ))}
+                    </ul>
+                    <p>{selectedProject.description}</p>
+                    <p>{selectedProject.additional_info}</p>
+                    <p>{selectedProject.roles}</p>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+
       </div>
     );
 
