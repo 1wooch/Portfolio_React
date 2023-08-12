@@ -1,0 +1,55 @@
+/* Project.css */
+
+/* Add background color to project cells */
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Display Technologies in one line */
+  .project-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-card li {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Modal styles */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Center modal content */
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: calc(100vh - 50px); /* Adjust as needed */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-card {
+      margin-right: 0;
+    }
+  }
+  .projectName{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+  }

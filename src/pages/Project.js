@@ -33,14 +33,12 @@ function Project(){
         const openModal = (project) => {
             setSelectedProject(project);
             setModalIsOpen(true);
-            console.log("modal work?");
         };
 
         const closeModal = () => {
             setSelectedProject(null);
             setModalIsOpen(false);
         };
-      ///
     return(
         <div className="expWrapper">
         <div className="row">
@@ -56,19 +54,39 @@ function Project(){
         </div>
         
         <h1 className="text-center">Projects</h1>
-        
+        <br/>
+        {/* project card*/}
         <div className="modalThing">
         {jsonData.projects.map((project, index) => (
-          <div className="project-card" key={index} onClick={() => openModal(project)}>
-            <h3>{project.name}</h3>
-            <ul>
-              {project.technologies.slice(0, 3).map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </ul>
-          </div>
+          index % 2 === 0 ? (
+            <div className="row" key={index}>
+              <div className="col-md-6">
+                <div className="project-card" onClick={() => openModal(project)}>
+                  <h3 className='projectName'>{project.name}</h3>
+                  <ul>
+                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                      <li key={techIndex}>{tech}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {index + 1 < jsonData.projects.length && (
+                <div className="col-md-6">
+                  <div className="project-card" onClick={() => openModal(jsonData.projects[index + 1])}>
+                    <h3 className='projectName'>{jsonData.projects[index + 1].name}</h3>
+                    <ul>
+                      {jsonData.projects[index + 1].technologies.slice(0, 3).map((tech, techIndex) => (
+                        <li key={techIndex}>{tech}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </div>
+          ) : null
         ))}
       </div>
+      {/* Modal */}
       <Modal
         show={modalIsOpen}
         onHide={closeModal}
@@ -76,11 +94,11 @@ function Project(){
         centered
         >
         <Modal.Header closeButton>
-          <Modal.Title>Course Selection</Modal.Title>
+          <Modal.Title>Project Selection</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modal-body">
-            <div className="col-3">
+            <div className="">
               <div>
                       {selectedProject && (
                   <>
