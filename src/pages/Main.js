@@ -52,9 +52,9 @@ function Main() {
                     <p>{randomFacts[generateRandomNumber()]}</p>
                     </div>
                     <div className="d-flex gap-2">
-                     {links.map((link) =>
+                     {links.map((link,index) =>
                         link.icon === "" ? (
-                          <div>
+                          <div key={index}>
                             <a href={link.url}>
                             <button type="button" className="btn btn-default bg-light">
                              {link.name}
@@ -64,7 +64,7 @@ function Main() {
                         )
                         :
                         (
-                          <div className="d-inline">
+                          <div key={index} className="d-inline">
                             <a href={link.url}>
                               <img
                                 src={`/logos/${link.icon}`}

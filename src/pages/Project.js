@@ -11,11 +11,31 @@ import lottie from "lottie-web";
 
 
 function Project(){
+
     const container = useRef(null);
     function generateRandomNumber() {
         return Math.floor(Math.random() * 6);
       }
+       ///////////ICON DISPLAY////////
+      //  const [uniqueTechnologies, setUniqueTechnologies] = useState(new Set());
+
+      //  function iconDisplay() {
+      //    const updatedTechnologies = new Set(uniqueTechnologies);
+     
+      //    for (let i = 0; i < jsonData.projects.length; i++) {
+      //      for (let j = 0; j < jsonData.projects[i].technologies.length; j++) {
+      //        updatedTechnologies.add(jsonData.projects[i].technologies[j]);
+      //      }
+      //    }
+     
+      //    setUniqueTechnologies(updatedTechnologies);
+      //  }     
+      /////ICON DISPLAY////////
+
       useEffect(() => {
+        /////ICON DISPLAY//////// 
+        //iconDisplay();
+        /////ICON DISPLAY////////
         const AnimationRandomNum = generateRandomNumber();
         document.title="Won | Experience";
         lottie.loadAnimation({
@@ -26,6 +46,7 @@ function Project(){
           animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
         });
       }, []);
+      
       ///Modal thing
         const [modalIsOpen, setModalIsOpen] = useState(false);
         const [selectedProject, setSelectedProject] = useState(null);
@@ -39,6 +60,7 @@ function Project(){
             setSelectedProject(null);
             setModalIsOpen(false);
         };
+        
     return(
         <div className="expWrapper">
         <div className="row">
@@ -55,6 +77,11 @@ function Project(){
         
         <h1 className="text-center">Projects</h1>
         <br/>
+        {/* <ul>
+        {Array.from(uniqueTechnologies).map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul> */}
         {/* project card*/}
         <div className="modalThing">
         {jsonData.projects.map((project, index) => (
@@ -65,7 +92,17 @@ function Project(){
                   <h3 className='projectName'>{project.name}</h3>
                   <ul>
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <li key={techIndex}>{tech}</li>
+                      <li key={techIndex}>
+                      <img
+                      src={`/logos/${tech}.png`}
+                      width="75"
+                      height="75"
+                      alt={tech}
+                      onError={(e)=>{
+                        e.target.onerror = null;
+                      }}
+                    />
+                    </li>
                     ))}
                   </ul>
                 </div>
@@ -76,7 +113,17 @@ function Project(){
                     <h3 className='projectName'>{jsonData.projects[index + 1].name}</h3>
                     <ul>
                       {jsonData.projects[index + 1].technologies.slice(0, 3).map((tech, techIndex) => (
-                        <li key={techIndex}>{tech}</li>
+                        <li key={techIndex}>
+                        <img
+                        src={`/logos/${tech}.png`}
+                        width="75"
+                        height="75"
+                        alt={tech}
+                        onError={(e)=>{
+                          e.target.onerror = null;
+                        }}
+                      />
+                      </li>
                       ))}
                     </ul>
                   </div>

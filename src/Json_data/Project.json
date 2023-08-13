@@ -16,7 +16,7 @@
       },
       {
         "name": "NSW Penalty Data Statistic App",
-        "technologies": ["Panda", "Matplotlib", "Python"],
+        "technologies": ["Pandas", "Matplotlib", "Python"],
         "description": "Developed NSW Penalty statistic",
         "additional_info": "Lead developer",
         "roles": null
@@ -30,7 +30,7 @@
       },
       {
         "name": "John Wack",
-        "technologies": ["Unity", "C#"],
+        "technologies": ["Unity", "C Sharp"],
         "description": "Developed Unity shooting survival game",
         "additional_info": "Project Manager, Sub developer",
         "roles": null
@@ -44,7 +44,7 @@
       },
       {
         "name": "CREATE Self-Report Tool",
-        "technologies": ["PHP Laravel", "Tailwind", "SQL", "JS", "Hosting (GoDaddy)"],
+        "technologies": ["PHP", "Tailwind", "SQL", "JS", "Hosting (GoDaddy)"],
         "description": "Developed project framework tool",
         "additional_info": "Project Manager, Back-end developer",
         "roles": null
