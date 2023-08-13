@@ -16,26 +16,8 @@ function Project(){
     function generateRandomNumber() {
         return Math.floor(Math.random() * 6);
       }
-       ///////////ICON DISPLAY////////
-      //  const [uniqueTechnologies, setUniqueTechnologies] = useState(new Set());
-
-      //  function iconDisplay() {
-      //    const updatedTechnologies = new Set(uniqueTechnologies);
      
-      //    for (let i = 0; i < jsonData.projects.length; i++) {
-      //      for (let j = 0; j < jsonData.projects[i].technologies.length; j++) {
-      //        updatedTechnologies.add(jsonData.projects[i].technologies[j]);
-      //      }
-      //    }
-     
-      //    setUniqueTechnologies(updatedTechnologies);
-      //  }     
-      /////ICON DISPLAY////////
-
       useEffect(() => {
-        /////ICON DISPLAY//////// 
-        //iconDisplay();
-        /////ICON DISPLAY////////
         const AnimationRandomNum = generateRandomNumber();
         document.title="Won | Experience";
         lottie.loadAnimation({
@@ -158,7 +140,7 @@ function Project(){
                     </ul>
                     <p>{selectedProject.description}</p>
                     <p>{selectedProject.additional_info}</p>
-                    <p>{selectedProject.roles}</p>
+                    <p>{selectedProject.Award}</p>
                   </>
                 )}
               </div>
