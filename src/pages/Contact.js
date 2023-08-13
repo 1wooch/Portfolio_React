@@ -1,9 +1,9 @@
+
+
 function Contact(){
     return (
-    <div >
-    <h1>It is Contact Page</h1>
+        <div onClick={(e) => {window.location.href ='mailto:example@email.com';}}>Send Mail To Me! </div>
 
-    </div>
     )
 }
 
