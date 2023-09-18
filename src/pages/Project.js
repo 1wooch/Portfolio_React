@@ -31,15 +31,30 @@ function Project(){
       
       ///Modal thing
         const [modalIsOpen, setModalIsOpen] = useState(false);
-        const [selectedProject, setSelectedProject] = useState(null);
+        const [selectedProject, setSelectedProject] = useState({
+          "name": "mock",
+          "technologies": [],
+          "description": "",
+          "additional_info": "",
+          "Award": null,
+          "GitRepo":""
+        });
 
         const openModal = (project) => {
+          console.log(project);
             setSelectedProject(project);
             setModalIsOpen(true);
         };
 
         const closeModal = () => {
-            setSelectedProject(null);
+            setSelectedProject({
+              "name": "mock",
+              "technologies": [],
+              "description": "",
+              "additional_info": "",
+              "Award": null,
+              "GitRepo":""
+            });
             setModalIsOpen(false);
         };
         
@@ -59,11 +74,7 @@ function Project(){
         
         <h1 className="text-center">Projects</h1>
         <br/>
-        {/* <ul>
-        {Array.from(uniqueTechnologies).map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul> */}
+      
         {/* project card*/}
         <div className="modalThing">
         {jsonData.projects.map((project, index) => (
@@ -123,7 +134,7 @@ function Project(){
         centered
         >
         <Modal.Header closeButton>
-          <Modal.Title>Project Selection</Modal.Title>
+          <Modal.Title>{selectedProject.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modal-body">
