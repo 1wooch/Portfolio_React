@@ -7,7 +7,7 @@ import jsonData from "../Json_data/Project.json";
 import "../css/Project.css";
 import lottie from "lottie-web";
 
-
+import acpla from "../Resource/ProjectPic/Acpla.mov";
 
 
 function Project(){
@@ -130,33 +130,45 @@ function Project(){
       <Modal
         show={modalIsOpen}
         onHide={closeModal}
-        className="modal"
+        // className="modal fade bd-example-modal-xl"
+        size='xl'
         centered
         >
         <Modal.Header closeButton>
-          <Modal.Title>{selectedProject.name}</Modal.Title>
+          <Modal.Title><h1>{selectedProject.name}</h1></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modal-body">
-            <div className="">
-              <div>
-                      {selectedProject && (
-                  <>
-                    <h2>{selectedProject.name}</h2>
-                    <h3>Technologies:</h3>
-                    <ul>
-                      {selectedProject.technologies.map((tech, index) => (
-                        <li key={index}>{tech}</li>
-                      ))}
-                    </ul>
-                    <p>{selectedProject.description}</p>
-                    <p>{selectedProject.additional_info}</p>
-                    <p>{selectedProject.Award}</p>
-                  </>
-                )}
+            <div className='row'>
+                <div className="col-4">
+                  <div>
+                          {selectedProject && (
+                      <>
+                        <h3>Technologies</h3>
+                        <ul className='modal-body-ul'>
+                          {selectedProject.technologies.map((tech, index) => (
+                            <li key={index} className="btn btn-sm btn-secondary rounded-pill bg-gray-700" >
+                              {tech}
+                            </li>
+                          ))}
+                        </ul>          
+                        <p>{selectedProject.description}</p>
+                        <p>{selectedProject.additional_info}</p>
+                        <p>{selectedProject.Award}</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className='col-8'>
+                    <video width='700' height='600' controls="controls" muted loop autoPlay>
+                        <source src={require("../Resource/ProjectPic/Acpla.mp4")} type="video/mp4"/> 
+                        {/* require is needed and without it it doesn't play */}
+                    </video>
+                </div>
               </div>
+             
             </div>
-          </div>
+            
         </Modal.Body>
       </Modal>
 
