@@ -7,7 +7,6 @@ import jsonData from "../Json_data/Project.json";
 import "../css/Project.css";
 import lottie from "lottie-web";
 
-import acpla from "../Resource/ProjectPic/Acpla.mov";
 
 
 function Project(){
