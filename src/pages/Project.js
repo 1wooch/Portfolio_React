@@ -18,13 +18,14 @@ function Project(){
      
       useEffect(() => {
         const AnimationRandomNum = generateRandomNumber();
+        const AnimeName=jsonData.MainAnime[AnimationRandomNum];
         document.title="Won | Experience";
         lottie.loadAnimation({
           container: container.current,
           renderer: "svg",
           loop: true,
           autoplay: true,
-          animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
+          animationData: require(`../Resource/Lottie/${AnimeName}`),
         });
       }, []);
       

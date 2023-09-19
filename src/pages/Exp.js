@@ -12,12 +12,13 @@ function Exp(){
       useEffect(() => {
         const AnimationRandomNum = generateRandomNumber();
         document.title="Won | Experience";
+        const AnimeName=jsonData.MainAnime[AnimationRandomNum];
         lottie.loadAnimation({
           container: container.current,
           renderer: "svg",
           loop: true,
           autoplay: true,
-          animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
+          animationData: require(`../Resource/Lottie/${AnimeName}`),
         });
       }, []);
 
