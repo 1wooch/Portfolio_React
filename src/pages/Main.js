@@ -17,13 +17,16 @@ function Main() {
   useEffect(() => {
     const AnimationRandomNum = generateRandomNumber();
     document.title="Won | Main";
-
+    console.log(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`)
+    const AnimeName = jsonData.MainAnime[AnimationRandomNum];
     lottie.loadAnimation({
       container: container.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
+      // animationData: require(`../Resource/Lottie/${jsonData.MainAnime[AnimationRandomNum]}`),
+      //animationData: require(`../Resource/Lottie/Grad.json`), //working
+      animationData: require(`../Resource/Lottie/${AnimeName}`),
     });
   }, []);
   const randomFacts = jsonData.randomFacts;

@@ -1,6 +1,7 @@
 // import "../css/Reset.css";
 
 // import "../css/common.css"
+import React  from 'react';
 
 
 function Footer(){

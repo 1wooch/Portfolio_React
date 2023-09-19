@@ -37,7 +37,8 @@ function Exp(){
 
 
       
-      <h1 className="text-center">🏫 Education</h1>
+      {/* <h1 className="text-center">🏫 Education</h1> */}
+      <h1 className="text-center"> Education</h1>
 
       <div className="row">
         <div className="col-md-1"></div>
@@ -56,7 +57,8 @@ function Exp(){
   
 
 
-        <h1 className="text-center">💼 Experience</h1>
+        {/* <h1 className="text-center">💼 Experience</h1> */}
+        <h1 className="text-center"> Experience</h1>
 
         <div className="row">
           <div className="col-md-1"></div>
