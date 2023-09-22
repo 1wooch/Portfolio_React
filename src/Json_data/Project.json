@@ -30,17 +30,7 @@
         "Video":null,
         "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
       },
-      {
-        "name": "WOW Employability Initiatives",
-        "technologies": ["Python", "SQL"],
-        "description": "Developed student career connect program",
-        "additional_info": "Client Communication Skill, Project Manager, Lead developer",
-        "Award": null,
-        "GitRepo":null,
-        "Video":null,
-        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"]
-
-      },
+      
       {
         "name": "John Wack",
         "technologies": ["Unity", "C Sharp"],
@@ -57,7 +47,9 @@
         "description": "Developed Online chat webpage",
         "additional_info": null,
         "Award": null,
-        "GitRepo":"https://github.com/1wooch/3813ICT_Assignment"
+        "GitRepo":"https://github.com/1wooch/3813ICT_Assignment",
+        "Video":null,
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
       },
       {
         "name": "CREATE Self-Report Tool",
@@ -65,7 +57,9 @@
         "description": "Developed project framework tool",
         "additional_info": "Project Manager, Back-end developer",
         "Award": null,
-        "GitRepo":"https://github.com/Xenuku/wil-co-design"
+        "GitRepo":"https://github.com/Xenuku/wil-co-design",
+        "Video":null,
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"]
       },
       {
         "name": "TETRIS",
@@ -73,7 +67,9 @@
         "description": "Developed Tetris game with GODOT framework",
         "additional_info": "Project Manager, Assessor Liaison, Developer",
         "Award": null,
-        "GitRepo":"https://github.com/Xenuku/3815ICT-Assignment"
+        "GitRepo":"https://github.com/Xenuku/3815ICT-Assignment",
+        "Picture":null,
+        "Video":null
       },
       {
         "name": "Sunrise and Sunset time by location",
@@ -81,7 +77,9 @@
         "description": "Developed geological sunrise and sunset time presenter application and user can save favourite place",
         "additional_info": "Use SWIFT for this application",
         "Award": null,
-        "GitRepo":"https://github.com/1wooch/Assignment2"
+        "GitRepo":"https://github.com/1wooch/Assignment2",
+        "Video":"https://youtu.be/kDbHXFka5IM?si=H7zz5Alq5qrrG96v",
+        "Picture":null
       },
       {
         "name": "Portfolio",
@@ -89,7 +87,10 @@
         "description": "Developed webpage with react.js. Showing my work experiences and projects I have done. ",
         "additional_info": "Portfolio Webpage hosted by Netlify",
         "Award": null,
-        "GitRepo":"https://github.com/1wooch/Assignment2"
+        "GitRepo":"https://github.com/1wooch/Assignment2",
+        "Picture":null,
+        "Video":null
+
       }
     ],
     "MainAnime": [
