@@ -160,10 +160,10 @@ function Project(){
                   </div>
                 </div>
                 <div className='col-8'>
-                    <video width='700' height='600' controls="controls" muted loop autoPlay>
-                        <source src={require("../Resource/ProjectPic/Acpla.mp4")} type="video/mp4"/> 
+                    {/* <video width='700' height='600' controls="controls" muted loop autoPlay>
+                        <source src={require("../Resource/ProjectPic/Acpla.mp4")} type="video/mp4"/>  */}
                         {/* require is needed and without it it doesn't play */}
-                    </video>
+                    {/* </video> */}
                 </div>
               </div>
              

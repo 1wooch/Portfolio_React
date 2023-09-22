@@ -6,7 +6,9 @@
         "description": "Developed academic planner for university students in Hackathon",
         "additional_info": "Scrawling Griffith University API and used it in our product.",
         "Award": "QUT Hackathon Award",
-        "GitRepo":null
+        "GitRepo":"https://github.com/1wooch/ACPLA",
+        "Video":"https://youtu.be/hrpm3GDa3z4",
+        "Picture": null
       },
       {
         "name": "Telegram price, Ticketing Alert bot",
@@ -14,8 +16,9 @@
         "description": "Developed price change telegram alert system",
         "additional_info": "Developed Telegram Ticketing alert system",
         "Award": null,
-        "GitRepo":"https://github.com/1wooch/telegram_alert"
-
+        "GitRepo":"https://github.com/1wooch/telegram_alert",
+        "Video":null,
+        "Picture":["1.PNG"]
       },
       {
         "name": "NSW Penalty Data Statistic App",
@@ -23,7 +26,9 @@
         "description": "Developed NSW Penalty statistic",
         "additional_info": "Lead developer",
         "Award": null,
-        "GitRepo":"https://github.com/briannebyer/2810ICT_Assignment_Group17"
+        "GitRepo":"https://github.com/briannebyer/2810ICT_Assignment_Group17",
+        "Video":null,
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
       },
       {
         "name": "WOW Employability Initiatives",
@@ -31,7 +36,10 @@
         "description": "Developed student career connect program",
         "additional_info": "Client Communication Skill, Project Manager, Lead developer",
         "Award": null,
-        "GitRepo":null
+        "GitRepo":null,
+        "Video":null,
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"]
+
       },
       {
         "name": "John Wack",
@@ -39,7 +47,9 @@
         "description": "Developed Unity shooting survival game",
         "additional_info": "Project Manager, Sub developer",
         "Award": null,
-        "GitRepo":"https://github.com/Xenuku/JonWhack"
+        "GitRepo":"https://github.com/Xenuku/JonWhack",
+        "Video":"https://youtu.be/9PzT-YpnAmg",
+        "Picture":null
       },
       {
         "name": "Online Chat webpage",
