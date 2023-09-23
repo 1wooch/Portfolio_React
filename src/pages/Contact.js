@@ -8,7 +8,7 @@ import styles from '../css/Contact.css'
 
 //pictures//
 import Acpla from '../Resource/ContactPic/Acpla.jpg';
-import BigDayIn from '../Resource/ContactPic/BigDayIn.JPG';
+//import BigDayIn from '../Resource/ContactPic/BigDayIn.JPG';
 import ICPC from '../Resource/ContactPic/ICPC.JPG';
 import Pioneer from '../Resource/ContactPic/Pioneer.jpeg';
 import T1Networking from '../Resource/ContactPic/T1Networking.jpg';
@@ -19,9 +19,9 @@ const images=[
   {
     original: Acpla,
   },
-  {
-    original: BigDayIn,
-  },
+  // {
+  //   original: BigDayIn,
+  // },
   {
     original: ICPC,
   },
@@ -38,9 +38,15 @@ const images=[
 
 function Contact(){
     return (
-        <div>
-            <div onClick={(e) => {window.location.href ='mailto:example@email.com';}}>Send Mail To Me! </div>
+        <div className='row'>
+          <div className='col-md-1'></div>
+          <div className='col-md-7'>
             <ImageGallery items={images} originalClass={styles.image} />
+          </div>
+          <div className='col-md-3'>
+          <div onClick={(e) => {window.location.href ='mailto:example@email.com';}}>Send Mail To Me! </div>
+          </div>
+          <div className='col-md-1'></div>
         </div>
 
     )
