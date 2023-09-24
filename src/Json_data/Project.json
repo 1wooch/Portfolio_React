@@ -48,7 +48,7 @@
         "live":null
       },
       {
-        "name": "Online Chat webpage",
+        "name": "Online Chat Webpage",
         "technologies": ["Angular.js", "Node.js", "MongoDB", "Mongo Atlas"],
         "description": "Developed Online chat webpage",
         "additional_info": null,
