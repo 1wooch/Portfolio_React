@@ -7,6 +7,8 @@ import Typewriter from "typewriter-effect";
 
 import "../css/Main.css";
 
+import email from "../Resource/email.png";
+
 function Main() {
   const container = useRef(null);
 
@@ -33,13 +35,12 @@ function Main() {
 
   return (
     <div>
- 
-
-
             <div className="contentDiv d-flex  ">
                 <div className="mainAni w-50 p-3" ref={container}style={{ width: "80%", height: "80%" }}></div>
                 <div className="details  w-50 p-3  ">
                   <div className="Typewriter ">
+                  <h1>Hello!</h1>
+
                         <Typewriter
                           options={{
                             strings: ['My name is Wonwoo Choi', 'You can call me Won!'],
@@ -49,7 +50,7 @@ function Main() {
                         />
                     </div>
                     <div className="">
-                    <p>Hello!</p>
+                    
                     <p>{randomFacts[generateRandomNumber()]}</p>
                     </div>
                     <div className="d-flex gap-2">
@@ -77,6 +78,10 @@ function Main() {
                           </div>
                         )
                       )}
+                    <div onClick={(e) => {window.location.href ='mailto:onechoo1106@gmail.com';}}><img src={email} width={50} height={50} alt="Email" /> </div>
+
+                  </div>
+                  <div>
                   </div>
                 </div>
                 

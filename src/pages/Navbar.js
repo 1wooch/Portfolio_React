@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
 
-<nav className="navbar navbar-expand-lg navbar-dark ">
+<nav className="navbar navbar-expand-lg navbar-dark pt-5">
   <Link className="navbar-brand text-white" to="/">
     <h1>WON</h1>
   </Link>
@@ -22,12 +22,12 @@ const Navbar = () => {
       <li className="nav-item">
         <Link className="nav-link text-white" to="/exp">Experience</Link>
       </li>
-      <li className="nav-item">
+      <li >
         <Link className="nav-link text-white" to="/project">Projects</Link>
       </li>
-      <li >
+      {/* <li >
         <Link className="nav-link text-white" to="/contact">Contact</Link>
-      </li>
+      </li> */}
     </ul>
   </div>
 </nav>

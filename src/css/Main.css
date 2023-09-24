@@ -7,7 +7,7 @@
     align-items: left;
     animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
     animation-fill-mode: forwards;
-    padding-top: 10%;
+    padding-top: 25px;
 
 }
 /* .details{
