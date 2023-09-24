@@ -11,11 +11,11 @@ import YouTube from 'react-youtube';
 import ImageGallery from 'react-image-gallery';
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 //import NApic from '../Resource/ProjectPic/CREATE Self-Report Tool/1.png';
-import styles from '../css/Contact.css'
 
 
 function Project(){
-
+  
+  
     const container = useRef(null);
     function generateRandomNumber() {
         return Math.floor(Math.random() * 6);
@@ -35,7 +35,6 @@ function Project(){
       }, []);
       
       ///Modal thing
-      //const images = [];
       const [images, setImages] = useState([]);
       
       const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -55,17 +54,10 @@ function Project(){
         setSelectedProject(project);
         setModalIsOpen(true);
    
-      //   if (project.Picture) {
-      //     for (let i = 0; i < project.Picture.length; i++) {
-      //     images.push({
-      //       original: `../Resource/ProjectPic/${project.name}/${project.Picture[i]}`,
-      //     }
-      //     )
-      //   }
-      // }
+      
       if (project.Picture) {
         const projectImages = project.Picture.map((picture) => ({
-          original: `../Resource/ProjectPic/${project.name}/${picture}`,
+          original: require(`../Resource/ProjectPic/${project.name}/${picture}`),
         }));
         setImages(projectImages);
       }
@@ -159,11 +151,9 @@ function Project(){
           ) : null
         ))}
       </div>
-      {/* Modal */}
       <Modal
         show={modalIsOpen}
         onHide={closeModal}
-        // className="modal fade bd-example-modal-xl"
         size='xl'
         centered
         >
@@ -193,10 +183,7 @@ function Project(){
                   </div>
                 </div>
                 <div className='col-8'>
-                    {/* <video width='700' height='600' controls="controls" muted loop autoPlay>
-                        <source src={require("../Resource/ProjectPic/Acpla.mp4")} type="video/mp4"/>  */}
-                        {/* require is needed and without it it doesn't play */}
-                    {/* </video> */}
+                
                     <div className='demonstrate'>
                     {selectedProject.Video !==null?(
                       <YouTube videoId={selectedProject.Video}/>
@@ -204,15 +191,13 @@ function Project(){
                     :selectedProject.Picture!==null?(
                       <div>
                         <ImageGallery items={images}  />;
-                        {/* <p>{images[0]}</p> */}
                       </div>
                       //<img src='../Resource/' alt='NA'/>
                     ):
                     (
-                      <img src={require('../Resource/NA.jpg')} />
+                      <img src={require('../Resource/NA.jpg')} alt='NA'/>
                       
-                      //<img src={require('../Resource/ProjectPic/NSW Penalty Data Statistic App/9.png')} />
-                    )
+                      )
                     }
 
                     </div>
