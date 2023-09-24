@@ -77,6 +77,7 @@ function Project(){
             "Picture":[],
             "live":""
           });
+          setImages([]);
           setModalIsOpen(false);
       };
      
