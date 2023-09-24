@@ -7,8 +7,10 @@
         "additional_info": "Scrawling Griffith University API and used it in our product.",
         "Award": "QUT Hackathon Award",
         "GitRepo":"https://github.com/1wooch/ACPLA",
-        "Video":"https://youtu.be/hrpm3GDa3z4",
-        "Picture": null
+        "Video":"hrpm3GDa3z4",
+        "Picture": null,
+        "live":"https://guacpla.netlify.app"
+
       },
       {
         "name": "Telegram price, Ticketing Alert bot",
@@ -18,7 +20,8 @@
         "Award": null,
         "GitRepo":"https://github.com/1wooch/telegram_alert",
         "Video":null,
-        "Picture":["1.PNG"]
+        "Picture":["1.PNG"],
+        "live":null
       },
       {
         "name": "NSW Penalty Data Statistic App",
@@ -28,7 +31,9 @@
         "Award": null,
         "GitRepo":"https://github.com/briannebyer/2810ICT_Assignment_Group17",
         "Video":null,
-        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"],
+        "live":null
+
       },
       
       {
@@ -38,8 +43,9 @@
         "additional_info": "Project Manager, Sub developer",
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/JonWhack",
-        "Video":"https://youtu.be/9PzT-YpnAmg",
-        "Picture":null
+        "Video":"9PzT-YpnAmg",
+        "Picture":null,
+        "live":null
       },
       {
         "name": "Online Chat webpage",
@@ -49,7 +55,9 @@
         "Award": null,
         "GitRepo":"https://github.com/1wooch/3813ICT_Assignment",
         "Video":null,
-        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"],
+        "live":null
+
       },
       {
         "name": "CREATE Self-Report Tool",
@@ -59,7 +67,9 @@
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/wil-co-design",
         "Video":null,
-        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"]
+        "Picture":["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"],
+        "live":null
+
       },
       {
         "name": "TETRIS",
@@ -69,7 +79,9 @@
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/3815ICT-Assignment",
         "Picture":null,
-        "Video":null
+        "Video":null,
+        "live":null
+
       },
       {
         "name": "Sunrise and Sunset time by location",
@@ -78,8 +90,10 @@
         "additional_info": "Use SWIFT for this application",
         "Award": null,
         "GitRepo":"https://github.com/1wooch/Assignment2",
-        "Video":"https://youtu.be/kDbHXFka5IM?si=H7zz5Alq5qrrG96v",
-        "Picture":null
+        "Video":"kDbHXFka5IM",
+        "Picture":null,
+        "live":null
+
       },
       {
         "name": "Portfolio",
@@ -89,7 +103,9 @@
         "Award": null,
         "GitRepo":"https://github.com/1wooch/Assignment2",
         "Picture":null,
-        "Video":null
+        "Video":null,
+        "live":"https://wwc1999.netlify.app"
+
 
       }
     ],

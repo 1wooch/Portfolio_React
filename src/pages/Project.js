@@ -7,6 +7,11 @@ import jsonData from "../Json_data/Project.json";
 import "../css/Project.css";
 import lottie from "lottie-web";
 
+import YouTube from 'react-youtube';
+import ImageGallery from 'react-image-gallery';
+import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
+//import NApic from '../Resource/ProjectPic/CREATE Self-Report Tool/1.png';
+import styles from '../css/Contact.css'
 
 
 function Project(){
@@ -30,34 +35,62 @@ function Project(){
       }, []);
       
       ///Modal thing
-        const [modalIsOpen, setModalIsOpen] = useState(false);
-        const [selectedProject, setSelectedProject] = useState({
-          "name": "mock",
-          "technologies": [],
-          "description": "",
-          "additional_info": "",
-          "Award": null,
-          "GitRepo":""
-        });
+      //const images = [];
+      const [images, setImages] = useState([]);
+      
+      const [modalIsOpen, setModalIsOpen] = useState(false);
+      const [selectedProject, setSelectedProject] = useState({
+        "name": "mock",
+        "technologies": [],
+        "description": "",
+        "additional_info": "",
+        "Award": null,
+        "GitRepo":"",
+        "Video":"",
+        "Picture":[],
+        "live":""
+      });
 
-        const openModal = (project) => {
-          console.log(project);
-            setSelectedProject(project);
-            setModalIsOpen(true);
-        };
-
-        const closeModal = () => {
-            setSelectedProject({
-              "name": "mock",
-              "technologies": [],
-              "description": "",
-              "additional_info": "",
-              "Award": null,
-              "GitRepo":""
-            });
-            setModalIsOpen(false);
-        };
+      const openModal = (project) => {
+        setSelectedProject(project);
+        setModalIsOpen(true);
+   
+      //   if (project.Picture) {
+      //     for (let i = 0; i < project.Picture.length; i++) {
+      //     images.push({
+      //       original: `../Resource/ProjectPic/${project.name}/${project.Picture[i]}`,
+      //     }
+      //     )
+      //   }
+      // }
+      if (project.Picture) {
+        const projectImages = project.Picture.map((picture) => ({
+          original: `../Resource/ProjectPic/${project.name}/${picture}`,
+        }));
+        setImages(projectImages);
+      }
+      console.log(images);
         
+      };
+
+      const closeModal = () => {
+          setSelectedProject({
+            "name": "mock",
+            "technologies": [],
+            "description": "",
+            "additional_info": "",
+            "Award": null,
+            "GitRepo":"",
+            "Video":"",
+            "Picture":[],
+            "live":""
+          });
+          setModalIsOpen(false);
+      };
+     
+        
+
+  
     return(
         <div className="expWrapper">
         <div className="row">
@@ -164,6 +197,26 @@ function Project(){
                         <source src={require("../Resource/ProjectPic/Acpla.mp4")} type="video/mp4"/>  */}
                         {/* require is needed and without it it doesn't play */}
                     {/* </video> */}
+                    <div className='demonstrate'>
+                    {selectedProject.Video !==null?(
+                      <YouTube videoId={selectedProject.Video}/>
+                    )
+                    :selectedProject.Picture!==null?(
+                      <div>
+                        <ImageGallery items={images}  />;
+                        {/* <p>{images[0]}</p> */}
+                      </div>
+                      //<img src='../Resource/' alt='NA'/>
+                    ):
+                    (
+                      <img src={require('../Resource/NA.jpg')} />
+                      
+                      //<img src={require('../Resource/ProjectPic/NSW Penalty Data Statistic App/9.png')} />
+                    )
+                    }
+
+                    </div>
+                  
                 </div>
               </div>
              
