@@ -188,12 +188,14 @@ function Project(){
                     <div className='demonstrate'>
                     {selectedProject.Video !==null?(
                       <YouTube videoId={selectedProject.Video}/>
-                    )
-                    :selectedProject.Picture!==null?(
-                      <div>
-                        <ImageGallery items={images}  />;
+                    )           :selectedProject.Picture!==null?(
+                      <div className='imageGallery' >
+                        <ImageGallery items={images} 
+                        showFullscreenButton={false}
+                        autoplay={true}
+                        className='imageGallery'
+                        />;
                       </div>
-                      //<img src='../Resource/' alt='NA'/>
                     ):
                     (
                       <img src={require('../Resource/NA.jpg')} alt='NA'/>
