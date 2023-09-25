@@ -41,7 +41,7 @@ function Exp(){
       {/* <h1 className="text-center">🏫 Education</h1> */}
       <h1 className="text-center"> Education</h1>
 
-      <div className="row justify-content-center">
+      <div className="row ">
         <div className="col-md-1"></div>
         <div className="col-md-10 " >
           <ul className="list-group list-group-dark d-flex flex-row">
@@ -61,14 +61,14 @@ function Exp(){
         {/* <h1 className="text-center">💼 Experience</h1> */}
         <h1 className="text-center"> Experience</h1>
 
-        <div className="row justify-content-center">
+        <div className="row ">
           <div className="col-md-1"></div>
           
           <div className="col-md-10 ">
             <ul className="list-group list-group-dark">
               {jsonData.experience &&
                 jsonData.experience.map((exp, index) => (
-                  <li key={index} className="jobLi">
+                  <li key={index} className="jobLi flex-fill">
                     <h3>{exp.WorkPlace}</h3>
                     <p>{exp.Position}</p>
                     <p>{exp.Place}</p>
