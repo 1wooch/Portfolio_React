@@ -41,7 +41,7 @@ function Exp(){
       {/* <h1 className="text-center">🏫 Education</h1> */}
       <h1 className="text-center"> Education</h1>
 
-      <div className="row ">
+      <div className="row justify-content-center">
         <div className="col-md-1"></div>
         <div className="col-md-10 " >
           <ul className="list-group list-group-dark d-flex flex-row">
@@ -61,7 +61,7 @@ function Exp(){
         {/* <h1 className="text-center">💼 Experience</h1> */}
         <h1 className="text-center"> Experience</h1>
 
-        <div className="row ">
+        <div className="row justify-content-center">
           <div className="col-md-1"></div>
           
           <div className="col-md-10 ">
