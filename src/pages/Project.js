@@ -33,7 +33,7 @@ function Project(){
       useEffect(() => {
         const AnimationRandomNum = generateRandomNumber();
         const AnimeName=jsonData.MainAnime[AnimationRandomNum];
-        document.title="Won | Experience";
+        document.title="Won | Project";
         lottie.loadAnimation({
           container: container.current,
           renderer: "svg",
@@ -207,7 +207,7 @@ function Project(){
                         <Carousel
                             data={images}
                             time={2000}
-                            width="500vw"
+                            width="100vw"
                             height="45vh"
                             captionStyle={captionStyle}
                             radius="10px"

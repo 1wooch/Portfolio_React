@@ -14,14 +14,17 @@
   .list-group.list-group-dark {
     background-color: black;
   }
-  
-  .list-group.list-group-dark .list-group-item {
+  .text-center{
+    padding: 15px;
+  }
+  /* .list-group.list-group-dark .list-group-item {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     margin-bottom: 10px;
     padding: 10px;
-  }
+    margin-left: 5px;
+  } */
   
   .list-group.list-group-dark .list-group-item h3 {
     color: white;
@@ -48,4 +51,21 @@
 
   .large-heading {
     font-size: 500px;
+  }
+  .educationLi{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .jobLi{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 5px;
+    padding: 10px;
+
+    border-radius: 10px;
   }
