@@ -155,8 +155,8 @@ function Project(){
       <Modal
         show={modalIsOpen}
         onHide={closeModal}
-        size='xl'
         centered
+        dialogClassName='modal'
         >
         <Modal.Header closeButton>
           <Modal.Title><h1>{selectedProject.name}</h1></Modal.Title>
@@ -183,7 +183,7 @@ function Project(){
                     )}
                   </div>
                 </div>
-                <div className='col-8'>
+                <div className='col-6'>
                 
                     <div className='demonstrate'>
                     {selectedProject.Video !==null?(
@@ -194,7 +194,8 @@ function Project(){
                         showFullscreenButton={false}
                         autoplay={true}
                         className='imageGallery'
-                        />;
+                        
+                        />
                       </div>
                     ):
                     (
