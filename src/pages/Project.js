@@ -8,14 +8,23 @@ import "../css/Project.css";
 import lottie from "lottie-web";
 
 import YouTube from 'react-youtube';
-import ImageGallery from 'react-image-gallery';
+// import ImageGallery from 'react-image-gallery';
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
+import { Carousel } from 'react-carousel-minimal';
+
 //import NApic from '../Resource/ProjectPic/CREATE Self-Report Tool/1.png';
 
 
 function Project(){
   
-  
+    const captionStyle = {
+      fontSize: '2em',
+      fontWeight: 'bold',
+    }
+    const slideNumberStyle = {
+      fontSize: '20px',
+      fontWeight: 'bold',
+    }
     const container = useRef(null);
     function generateRandomNumber() {
         return Math.floor(Math.random() * 6);
@@ -57,7 +66,7 @@ function Project(){
       
       if (project.Picture) {
         const projectImages = project.Picture.map((picture) => ({
-          original: require(`../Resource/ProjectPic/${project.name}/${picture}`),
+          image: require(`../Resource/ProjectPic/${project.name}/${picture}`),
         }));
         setImages(projectImages);
       }
@@ -190,12 +199,28 @@ function Project(){
                       <YouTube videoId={selectedProject.Video}/>
                     )           :selectedProject.Picture!==null?(
                       <div className='imageGallery' >
-                        <ImageGallery items={images} 
+                        {/* <ImageGallery items={images} 
                         showFullscreenButton={false}
                         autoplay={true}
-                        className='imageGallery'
-                        
-                        />
+                        className='imageGallery' 
+                        /> */}
+                        <Carousel
+                            data={images}
+                            time={2000}
+                            width="500vw"
+                            height="45vh"
+                            captionStyle={captionStyle}
+                            radius="10px"
+                            slideNumber={true}
+                            slideNumberStyle={slideNumberStyle}
+                            captionPosition="bottom"
+                            automatic={true}
+                            dots={true}
+                            pauseIconColor="white"
+                            pauseIconSize="40px"
+                            slideBackgroundColor="darkgrey"
+                            slideImageFit="cover"
+                          />
                       </div>
                     ):
                     (
