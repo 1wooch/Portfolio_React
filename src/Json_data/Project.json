@@ -3,8 +3,8 @@
       {
         "name": "ACPLA",
         "technologies": ["React", "JS", "PHP", "HTML5", "CSS"],
-        "description": "Developed academic planner for university students in Hackathon",
-        "additional_info": "Scrawling Griffith University API and used it in our product.",
+        "description": "Developed Learning Management System for university students during Hackathon. Got the API from university webpage, I needed to dig university webpage to find university webpage. I used React.js for front-end and PHP for back-end. I used PHP to get API from university webpage and send it to front-end. I used React.js to show the data from PHP. I used HTML5 and Bootstrap for styling. I used Git for version control and Netlify for hosting. ",
+        "additional_info": "Developer and Presentation",
         "Award": "QUT Hackathon Award",
         "GitRepo":"https://github.com/1wooch/ACPLA",
         "Video":"hrpm3GDa3z4",
@@ -15,8 +15,8 @@
       {
         "name": "Telegram price, Ticketing Alert bot",
         "technologies": ["Python", "Beautiful Soup4", "Telegram Bot", "Web Scrolling"],
-        "description": "Developed price change telegram alert system",
-        "additional_info": "Developed Telegram Ticketing alert system",
+        "description": "I developed product and movie ticekt open alert system using Beautiful Soup 4 as web scrawler and Telegram bot. I used Beautiful Soup 4 to get data from website and send it to Telegram bot. I used Telegram bot to send message to user. I used Git for version control and hosted on my local laptop. To use the scrawler I needed to see how the website is structured and find the data I want to get.",
+        "additional_info": "Personal Project",
         "Award": null,
         "GitRepo":"https://github.com/1wooch/telegram_alert",
         "Video":null,
@@ -26,8 +26,8 @@
       {
         "name": "NSW Penalty Data Statistic App",
         "technologies": ["Pandas", "Matplotlib", "Python"],
-        "description": "Developed NSW Penalty statistic",
-        "additional_info": "Lead developer",
+        "description": "By using Panda and Matplotlib, I developed NSW Penalty statistic application. The data came from NSW webpage with 15000 datas, I used Panda to get data from CSV file and Matplotlib to show the data with various graph. I used Git for version control. As a team leader I needed to collaborate and communicate with team members. ",
+        "additional_info":"Project Manager, Lead Developer" ,
         "Award": null,
         "GitRepo":"https://github.com/briannebyer/2810ICT_Assignment_Group17",
         "Video":null,
@@ -39,8 +39,8 @@
       {
         "name": "John Wack",
         "technologies": ["Unity", "C Sharp"],
-        "description": "Developed Unity shooting survival game",
-        "additional_info": "Project Manager, Sub developer",
+        "description": "Led a team in developing a 2D pixel shooting survival game. As the team leader, I oversaw project timelines, managed team coordination, and specifically handled the coding for enemy units.",
+        "additional_info":"Project Manager, Back-end developer" ,
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/JonWhack",
         "Video":"9PzT-YpnAmg",
@@ -50,7 +50,7 @@
       {
         "name": "Online Chat Webpage",
         "technologies": ["Angular.js", "Node.js", "MongoDB", "Mongo Atlas"],
-        "description": "Developed Online chat webpage",
+        "description": "Developed Online chat webpage using Mongo, Node.js, Angular.js and TypeScript. It was hard to learn angular and typescript for first time, but with patience and practice, at the end I can get HD with this course. ",
         "additional_info": null,
         "Award": null,
         "GitRepo":"https://github.com/1wooch/3813ICT_Assignment",
@@ -62,7 +62,7 @@
       {
         "name": "CREATE Self-Report Tool",
         "technologies": ["PHP", "Tailwind", "SQL", "JS", "Hosting (GoDaddy)"],
-        "description": "Developed project framework tool",
+        "description": "As a capstone project Team worked with Hopkins Centre. As a project manager I need to communicate between client and team members and make sure the project is going well. I also need to explain technical term to client in easy way. Team used PHP for back-end and Tailwind for front-end. Team used SQL for database. Team used Git for version control and GoDaddy for hosting. ",
         "additional_info": "Project Manager, Back-end developer",
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/wil-co-design",
@@ -74,7 +74,7 @@
       {
         "name": "TETRIS",
         "technologies": ["GODOT"],
-        "description": "Developed Tetris game with GODOT framework",
+        "description": "Developed Tetris game using godot engine. As a project manager I manage all the team members do their work and distribute the work with each member's strength. ALso, manage documents, pull request and developed score and main screens.",
         "additional_info": "Project Manager, Assessor Liaison, Developer",
         "Award": null,
         "GitRepo":"https://github.com/Xenuku/3815ICT-Assignment",
@@ -86,7 +86,7 @@
       {
         "name": "Sunrise and Sunset time by location",
         "technologies": ["SWIFT"],
-        "description": "Developed geological sunrise and sunset time presenter application and user can save favourite place",
+        "description": "Developed geological sunrise and sunset time presenter application and user can save favourite place. Stored the data in core data. Used Weather, Sunrise and Local Time API, to display user location Weather, Sunrise and local time.",
         "additional_info": "Use SWIFT for this application",
         "Award": null,
         "GitRepo":"https://github.com/1wooch/Assignment2",

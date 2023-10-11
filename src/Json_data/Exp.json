@@ -1,17 +1,30 @@
 {
  "experience":[
     {
+        "WorkPlace":"HappyTel",
+        "Position":"Smart Device Specialist",
+        "Place":"Brisbane Australia",
+        "StartMonth":"2023/06",
+        "EndMonth":"~",
+        "Skills":[
+            "Problem Solving Skills.",
+            "Client Communication Skill."
+        ],
+
+        "Description":"Repairing mobile phones, communicating issues to clients, and working in a team to ensure products are fixed in time"
+    },
+    {
         "WorkPlace":"GRIFFITH UNIVERSITY",
         "Position":"Software Engineer",
         "Place":"Brisbane Australia",
-        "StartMonth":"2019",
-        "EndMonth":"2023",
+        "StartMonth":"2022/06",
+        "EndMonth":"2022/09",
         "Skills":[
             "Project Management Skill.",
             "Client Communication Skill."
         ],
 
-        "Description":"Assisted in the development of a career opportunity form and bot for Griffith Business School. I worked closely with Dr. Geoffery and gained experience in project management and maintaining effective communication with clients during a project, which unfortunately was cancelled due to privacy concerns."
+        "Description":"Developed a career-matching service for GBS utilizing the Survey Monkey API for data input and migrated this data to an SQL server for optimized storage and retrieval. I used Python, SQL for this project Constructed a system that cross-references job advertisements with user profiles to identify opportunities aligned with individual skill sets."
     },
     {
         "WorkPlace":"HAEDOORI KOREAN FRIED CHICKEN SHOP",
@@ -36,7 +49,7 @@
             "Customer Service.",
             "Basic Excel and Document Management Skills."
         ],
-        "Description":"I worked for a government tax administration institution, where I assisted with end-of-year tax adjustments both in person and over the phone. Before starting this job, I took the initiative to study the tax system to gain a better understanding of its workings. I utilised my customer service skills from prior jobs to provide exceptional service to taxpayers. Due to my experience with Excel and Word documents I was able to quickly adapt to the requirements of this role and efficiently navigate the tax system."
+        "Description":"Provided Technology Support to taxpayers through competent and efficient use of Microsoft Excel and Word, and clearly communicating issues to understand them."
     },
     {
         "WorkPlace":"ST. JOHN DISABILITY WELFARE CENTRE, KOREA SEOUL",
