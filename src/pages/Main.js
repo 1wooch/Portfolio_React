@@ -40,14 +40,16 @@ function Main() {
                 <div className="details  w-50 p-3  ">
                   <div className="Typewriter ">
                   <h1>Hello!</h1>
-
-                        <Typewriter
+                      <div>
+                      <Typewriter
                           options={{
                             strings: ['My name is Wonwoo Choi', 'You can call me Won!'],
                             autoStart: true,
                             loop: true,
                           }}
                         />
+                      </div>
+                        
                     </div>
                     <div className="">
                     

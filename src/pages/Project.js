@@ -10,21 +10,14 @@ import lottie from "lottie-web";
 import YouTube from 'react-youtube';
 // import ImageGallery from 'react-image-gallery';
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
-import { Carousel } from 'react-carousel-minimal';
+import { Link } from 'react-router-dom';
 
 //import NApic from '../Resource/ProjectPic/CREATE Self-Report Tool/1.png';
 
 
 function Project(){
   
-    const captionStyle = {
-      fontSize: '2em',
-      fontWeight: 'bold',
-    }
-    const slideNumberStyle = {
-      fontSize: '20px',
-      fontWeight: 'bold',
-    }
+    
     const container = useRef(null);
     function generateRandomNumber() {
         return Math.floor(Math.random() * 6);
@@ -59,18 +52,23 @@ function Project(){
         "live":""
       });
 
+      ///Modal Image disply
+
+      const [showIndex, setShowIndex] = useState(0);
+      
+      const lotationImage=()=>{
+        setShowIndex((showIndex) % selectedProject.Picture.length+1);
+
+      }
+      ///
+
       const openModal = (project) => {
         setSelectedProject(project);
         setModalIsOpen(true);
-   
-      
-      if (project.Picture) {
-        const projectImages = project.Picture.map((picture) => ({
-          image: require(`../Resource/ProjectPic/${project.name}/${picture}`),
-        }));
-        setImages(projectImages);
-      }
-      console.log(images);
+        if(project.Picture!==null){
+        setShowIndex(project.Picture.length);
+        }
+  
         
       };
 
@@ -88,9 +86,11 @@ function Project(){
           });
           setImages([]);
           setModalIsOpen(false);
+          console.log(images);
       };
      
-        
+    // carouse autoplay stopping
+  //
 
   
     return(
@@ -185,50 +185,36 @@ function Project(){
                             </li>
                           ))}
                         </ul>          
-                        <p>{selectedProject.description}</p>
                         <p>{selectedProject.additional_info}</p>
                         <p>{selectedProject.Award}</p>
+                        <Link to={selectedProject.GitRepo} target="_blank">
+                        <img
+                                src={`/logos/github_Black.png`}
+                                alt={selectedProject.GitRepo}
+                                width="50"
+                                height="50"
+                        />
+                        </Link>
+                        
                       </>
                     )}
                   </div>
                 </div>
                 <div className='col-6'>
-                
-                    <div className='demonstrate'>
-                    {selectedProject.Video !==null?(
-                      <YouTube videoId={selectedProject.Video}/>
-                    )           :selectedProject.Picture!==null?(
-                      <div className='imageGallery' >
-                        {/* <ImageGallery items={images} 
-                        showFullscreenButton={false}
-                        autoplay={true}
-                        className='imageGallery' 
-                        /> */}
-                        <Carousel
-                            data={images}
-                            time={2000}
-                            width="100vw"
-                            height="45vh"
-                            captionStyle={captionStyle}
-                            radius="10px"
-                            slideNumber={true}
-                            slideNumberStyle={slideNumberStyle}
-                            captionPosition="bottom"
-                            automatic={true}
-                            dots={true}
-                            pauseIconColor="white"
-                            pauseIconSize="40px"
-                            slideBackgroundColor="darkgrey"
-                            slideImageFit="cover"
-                          />
-                      </div>
-                    ):
-                    (
-                      <img src={require('../Resource/NA.jpg')} alt='NA'/>
-                      
-                      )
-                    }
-
+                    <div>
+                      {
+                        selectedProject.Video!==null?(
+                          <YouTube videoId={selectedProject.Video}/>
+                        ):selectedProject.Picture!==null?(
+                          <div>
+                            <img className='demonstratePicture' src={require(`../Resource/ProjectPic/${selectedProject.name}/${showIndex}.png`)} alt="demonstrate is gone :0" onClick={lotationImage}/>
+                          </div>
+                        ):(
+                        
+                          <img className='demonstratePicture' src={require('../Resource/NA.jpg')} alt='NA'/>
+                        )
+                      }
+                       <p>{selectedProject.description}</p>
                     </div>
                   
                 </div>
