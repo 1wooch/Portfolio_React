@@ -220,7 +220,9 @@ function Project(){
                         selectedProject.Video!==null?(
                           <YouTube videoId={selectedProject.Video}/>
                         ):selectedProject.Picture!==null?(
+                          
                           <div>
+                            <a>!Click the image to see next picture!</a>
                             <img className='demonstratePicture' src={require(`../Resource/ProjectPic/${selectedProject.name}/${showIndex}.png`)} alt="demonstrate is gone :0" onClick={lotationImage}/>
                           </div>
                         ):(
