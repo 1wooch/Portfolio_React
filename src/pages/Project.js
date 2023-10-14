@@ -168,7 +168,21 @@ function Project(){
         dialogClassName='modal'
         >
         <Modal.Header closeButton>
-          <Modal.Title><h1>{selectedProject.name}</h1></Modal.Title>
+          <Modal.Title>
+            
+            <h1>{selectedProject.name}</h1>
+            {
+              selectedProject.live !== null ? (
+                <a href={selectedProject.live} target="_blank">
+                  Go To This Webpage
+                </a>
+              ) : (
+                <>
+                </>
+              )
+            }
+                      
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modal-body">
