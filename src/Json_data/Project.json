@@ -13,7 +13,7 @@
 
       },
       {
-        "name": "Telegram price, Ticketing Alert bot",
+        "name": "Telegram price Ticketing Alert bot",
         "technologies": ["Python", "Beautiful Soup4", "Telegram Bot", "Web Scrolling"],
         "description": "I developed product and movie ticekt open alert system using Beautiful Soup 4 as web scrawler and Telegram bot. I used Beautiful Soup 4 to get data from website and send it to Telegram bot. I used Telegram bot to send message to user. I used Git for version control and hosted on my local laptop. To use the scrawler I needed to see how the website is structured and find the data I want to get.",
         "additional_info": "Personal Project",
