@@ -102,7 +102,7 @@ function Project(){
           </div>
           <div className="col-md-4 d-flex align-items-center">
           {/* <h1 className="text-center text-lg">Education & Experience</h1> */}
-          <h1 className="large-heading">Porjects</h1>
+          <h1 className="large-heading">Projects</h1>
           </div>
           <div className="col-md-1"></div>
         </div>
